@@ -13,8 +13,8 @@ Gradient Descent를 통해 로봇 팔의 위치와 타겟과의 거리를 함수
 
 이에 따라, Gradient Descent 원리에 의해 ang1이 타겟에 가까워지기 위해서는 거리를 의미하는 식을 ang들로 구성한 식에서 해당 ang 기준으로 편미분한 결과를 뺴주면 다음 ang 값을 알 수 있고 이 값을 통해 로봇 팔의 위치를 정해주면 됩니다.
 
-## 코드 설명
-### 헤더 설명
+# 코드 설명
+## 헤더 설명
 MyCube.h는 해당 프로젝트에서 정육면체를 그리기 위해 정의한 헤더입니다.
 
 MyPyramid.h는 해당 프로젝트에서 피라미드를 그리기 위해 정의한 헤더입니다.
@@ -22,12 +22,12 @@ MyPyramid.h는 해당 프로젝트에서 피라미드를 그리기 위해 정의
 MyTarget.h는 MyCube.h 의 기능을 사용하지만, 추가로 위치 값을 제공하는 GetPosition 함수의 기능을 추가한 것입니다.
 GetPosition은 bRandom 값에 의해 true이면, 랜덤 함수에 기반한 무작위의 위치 값을 제공하도록 하고, false인 경우 인자로 받은 time 값에 기반하여 원 운동을 하도록 위치값을 제공합니다.
 
-### main.cpp 설명
+## main.cpp 설명
 
-#### drawRobotArm
+### drawRobotArm
 drawRobotArm 함수가 로봇팔을 그리는 역할을 하는 함수입니다.
 로봇팔을 그릴 때 유의해야하는데, 원점을 기준으로 로폿팔을 그릴 때, 팔의 길이에서 반만큼의 값의 위치에서 ang만큼 회전한 후, 받침대에 알맞은 위치로 옮기기 위해 z축 기준으로 이동을 한 후 스케일링을 주어야한다는 것을 명심해야합니다.
 * 원점을 기준으로 해당 위치에서 회전한 물체가 일정 크기로 존재한다 => Scale * Rotation * Translation 연산 순서 규칙에 유의한 결과.
 
-#### computeAngle 
+### computeAngle 
 computeAngle은 위에서 설명한 gradient descent를 활용한 연산을 수행하여 ang 값을 할당해주는 역할의 함수입니다.
