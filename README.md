@@ -22,6 +22,8 @@ MyPyramid.h는 해당 프로젝트에서 피라미드를 그리기 위해 정의
 MyTarget.h는 MyCube.h 의 기능을 사용하지만, 추가로 위치 값을 제공하는 GetPosition 함수의 기능을 추가한 것입니다.
 GetPosition은 bRandom 값에 의해 true이면, 랜덤 함수에 기반한 무작위의 위치 값을 제공하도록 하고, false인 경우 인자로 받은 time 값에 기반하여 원 운동을 하도록 위치값을 제공합니다.
 
+---
+
 ## main.cpp 설명
 
 ### drawRobotArm
